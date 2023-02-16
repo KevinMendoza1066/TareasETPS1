@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="347dp"
+        android:layout_height="673dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:autoText="false"
+            android:text="Ingrese dos numeros y la operacion a realizar"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Numero 1 :"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="0.00"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Numero 2:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNumero2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="0.00"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Seleccione Operacion"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbSuma"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="+ (Suma)" />
+
+            <RadioButton
+                android:id="@+id/rbResta"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:text="- (Resta)" />
+
+            <RadioButton
+                android:id="@+id/rbMultiplicacion"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:text="* (Multiplicacion)" />
+
+            <RadioButton
+                android:id="@+id/rbDivision"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:text="/ (Division)" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50dp"
+            android:onClick="Mostrar"
+            android:text="Generar Resultado" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
